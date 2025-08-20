@@ -1,9 +1,4 @@
 
-'''# API Keys - you must add these yourself
-SERP_API_KEY = "a96ac634d7a7c9dc842193a085ba04b36114a9b158b4acf1c9327f7038a1e7fe"
-NEWS_API_KEY = "23f6f075064e476d9bc1373b16af3b79"
-'''
-
 # config/settings.py
 
 import os
@@ -23,9 +18,9 @@ RABBITMQ_PASS = os.getenv("RABBITMQ_PASS", "guest")
 # -------------------------------
 # External API Keys
 # -------------------------------
-SERP_API_KEY = "a96ac634d7a7c9dc842193a085ba04b36114a9b158b4acf1c9327f7038a1e7fe"   # For DuckDuckGo / SerpAPI
+SERP_API_KEY = "YOUR_SERP_API"   # For DuckDuckGo / SerpAPI
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")  # For sentiment analysis (GPT)
-NEWS_API_KEY = "23f6f075064e476d9bc1373b16af3b79"   # For News API
+NEWS_API_KEY = "YOUR_NEWS_API"   # For News API
 
 # -------------------------------
 # Queues (Standardized across system)
@@ -40,3 +35,4 @@ ORCHESTRATOR_QUEUE = "orchestrator_queue"
 # Logging Config
 # -------------------------------
 LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
+
